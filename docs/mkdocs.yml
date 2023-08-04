@@ -12,9 +12,6 @@ plugins:
   - social
   - search
   - same-dir
-  - table-reader
-  - markdownextradata:
-      data: /_data
 
 theme:
   language: en

@@ -48,7 +48,7 @@ The Tower documentation project relies on [mike](https://squidfunk.github.io/mkd
         -
         ```
         4. Each unique column name will be rendered in the table, so ensure that all row entries have the same column name keys. The example above shows the structure for two row entries in a table with three columns.
-        5. Reference this table in other markdown files with `{{` read_yaml('./tables/compute_env.yml') `}}` (relative path to the table from the markdown file where it is being referenced).
+        5. Reference this table in other markdown files with `{{` `read_yaml('./tables/compute_env.yml')` `}}` (relative path to the table from the markdown file where it is being referenced).
 
 - [mkdocs-markdownextradata-plugin](https://github.com/rosscdh/mkdocs-markdownextradata-plugin)
     - Implement DRY-like variables for content which appears throughout the site. ( _Example: The latest Tower Enterprise container names._ )
