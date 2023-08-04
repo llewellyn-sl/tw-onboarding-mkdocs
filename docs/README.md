@@ -46,7 +46,7 @@ As of June 2023, a new process was implemented for sourcing and publishing Nextf
     3. Run the Docker build command:
 
     ```bash
-    docker build --build-arg GITEA_TOKEN=${GITEA_TOKEN} -t seqera-docs .  # including the . at the end
+    docker build --build-arg GITEA_TOKEN=${GITEA_TOKEN} -t tw-onboarding-docs .  # including the . at the end
 
     # Or, use a `make` command
     make build-docker
@@ -61,7 +61,7 @@ As of June 2023, a new process was implemented for sourcing and publishing Nextf
     3. Run the Docker run command:
 
     ```bash
-    docker run --rm -p 8000:8000 -v ${PWD}:/docs seqera-docs:latest serve --dev-addr=0.0.0.0:8000
+    docker run --rm -p 8000:8000 -v ${PWD}:/docs tw-onboarding-docs:latest serve --dev-addr=0.0.0.0:8000
     ```
 
 4. **Visit <http://0.0.0.0:8000> from your favorite browser**.
