@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>http://0.0.0.0:8000/</loc>
+         <lastmod>2023-08-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://0.0.0.0:8000/onboarding-checklist/checklist/</loc>
+         <lastmod>2023-08-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://0.0.0.0:8000/tower-docs/mkdocs/</loc>
+         <lastmod>2023-08-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://0.0.0.0:8000/tower-docs/publish/</loc>
+         <lastmod>2023-08-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://0.0.0.0:8000/tower-docs/style/</loc>
+         <lastmod>2023-08-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://0.0.0.0:8000/tower-docs/tower-release-checklist/</loc>
+         <lastmod>2023-08-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
