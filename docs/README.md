@@ -36,7 +36,7 @@ This README details the build flow for the onboarding docs. See [MkDocs build](.
 
 3. **Run the container**
 
-    Once the `docker build` in nf-tower-docs has succeeded, run the Docker container:
+    Once the `docker build` has succeeded, run the Docker container:
 
     1. Check out the feature branch you wish to preview on tw-onboarding-mkdocs.
     2. Navigate to `/docs`.
