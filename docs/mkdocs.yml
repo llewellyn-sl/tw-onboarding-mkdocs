@@ -14,7 +14,7 @@ plugins:
   - same-dir
   - table-reader
   - markdownextradata:
-    data: /_data
+      data: /_data
 
 theme:
   language: en
