@@ -11,13 +11,14 @@ This README details the build flow for the onboarding docs. See [MkDocs build](.
 
 1. **Generate a token on <git.seqera.io> (i.e. "Gitea")**
 
-    1. Log in to [git.seqera.io](https://git.seqera.io) using your Seqera credentials
-    2. In the top right menu, click on your avatar and select `Settings` from the drop-down menu
-    3. Select `Applications` near the top of the page
-    4. Generate a new token and copy the value after form submission
-    5. Store the token value as a `GITEA_TOKEN` environment variable, optionally added to .bashrc/.zshrc. 
-    6. Run `source .bashrc` or `source .zshrc` once saved.
-    7. Alternatively, use an existing token (e.g., Llewellyn or Graham).
+    1. 
+    2. Log in to [git.seqera.io](https://git.seqera.io) using your Seqera credentials
+    3. In the top right menu, click on your avatar and select `Settings` from the drop-down menu
+    4. Select `Applications` near the top of the page
+    5. Generate a new token and copy the value after form submission
+    6. Store the token value as a `GITEA_TOKEN` environment variable, optionally added to .bashrc/.zshrc. 
+    7. Run `source .bashrc` or `source .zshrc` once saved.
+    8. Alternatively, use an existing token (e.g., Llewellyn or Graham).
 
 2. **Build docs image**
 
