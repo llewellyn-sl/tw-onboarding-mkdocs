@@ -82,12 +82,13 @@ We use [mkdocs-table-reader-plugin](https://timvink.github.io/mkdocs-table-reade
 ## MkDocs variables for content re-use
 
 We use [mkdocs-markdownextradata-plugin](https://github.com/rosscdh/mkdocs-markdownextradata-plugin) to implement DRY-like variables for values that need to be updated in multiple locations on the site (e.g., the Tower container image URLs):
-    1. Create an external yaml file in `/docs/_data/` (e.g., `images.yml`)
-    2. Add key-value pairs to the external file (e.g. `tower_fe_image: "cr.seqera.io/private/nf-tower-enterprise/frontend:v23.1.3"`).
-    3. Update the `plugins` entry with a path to the file:
-        ```yaml
-        plugins:
-            - markdownextradata:
-                data: _data/images.yml
-        ```
-    4. Reference this variable in other markdown files with `{{ images.tower_fe_image }}`.
+
+1. Create an external yaml file in `/docs/_data/` (e.g., `images.yml`)
+2. Add key-value pairs to the external file (e.g. `tower_fe_image: "cr.seqera.io/private/nf-tower-enterprise/frontend:v23.1.3"`).
+3. Update the `plugins` entry with a path to the file:
+    ```yaml
+    plugins:
+        - markdownextradata:
+            data: _data/images.yml
+    ```
+4. Reference this variable in other markdown files with `{{ images.tower_fe_image }}`.
