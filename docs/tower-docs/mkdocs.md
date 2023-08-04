@@ -38,23 +38,23 @@ Insert tables (CSV, YML, etc.) directly into markdown pages using a tag. How it'
 
 1. Activate as a `plugins` entry in `mkdocs.yml` (below `social` and `search`, but above other mkdocs plugins)
 2. Create an external yaml file in a `tables` folder within the content subfolder (e.g., `docs/enterprise/configuration/tables/compute_env.yml`)
-3. Add key-value pairs in groups, where each key represents a column name, and each value represents an entry in a row, e.g.:
+3. Add key-value pairs in groups, where each key represents a column name, and each value represents an entry in a row, e.g.,:
 
-```yaml
--
-Environment variable:            "`TOWER_DB_USER`"
-Description: >
-    The user account to access your database.<br/>
-    Create this user manually if using an external database.
-Value:                "e.g., `db_user`"
--
-Environment variable:            "`TOWER_DB_PASSWORD`"
-Description: >
-    The user password to access your database.<br/>
-    Create this password manually if using an external database.
-Value:
--
-```
+    ```yaml
+    -
+    Environment variable:            "`TOWER_DB_USER`"
+    Description: >
+        The user account to access your database.<br/>
+        Create this user manually if using an external database.
+    Value:                "e.g., `db_user`"
+    -
+    Environment variable:            "`TOWER_DB_PASSWORD`"
+    Description: >
+        The user password to access your database.<br/>
+        Create this password manually if using an external database.
+    Value:
+    -
+    ```
 
 4. Each unique column name will be rendered in the table, so ensure that all row entries have the same column name keys. The example above shows the structure for two row entries in a table with three columns.
 5. Reference this table in other markdown files with `{{` `read_yaml('./tables/compute_env.yml')` `}}` (relative path to the table from the markdown file where it is being referenced).

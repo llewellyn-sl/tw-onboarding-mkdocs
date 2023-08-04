@@ -11,7 +11,7 @@ This README details the build flow for the onboarding docs. See [MkDocs build](.
 
 1. **Generate a token on <git.seqera.io> (i.e. "Gitea")**
 
-    1. 
+    1. Request Gitea access on 
     2. Log in to [git.seqera.io](https://git.seqera.io) using your Seqera credentials
     3. In the top right menu, click on your avatar and select `Settings` from the drop-down menu
     4. Select `Applications` near the top of the page
@@ -49,11 +49,9 @@ This README details the build flow for the onboarding docs. See [MkDocs build](.
 
 4. **Visit <http://0.0.0.0:8000> from your favorite browser**.
 
-
 ## Contribution guidelines
 
 - Write according to the [content style guide](https://docs.google.com/document/d/1j8cQAtwJLW891TDBSDMYTy3Jcr4gRVxtqwcWzPCjTY4/edit?usp=sharing)
-
 
 ## Technical review guidelines
 
@@ -63,7 +61,6 @@ When assessing doc content for technical accuracy, keep in mind:
 - Whether the content can be simplified or streamlined in relation to existing content.
 - Does the content instruct users according to best practices?
 - Are there any edge cases or caveats that are helpful for users to know that should be added to the content?
-
 
 ## MkDocs mechanics
 
