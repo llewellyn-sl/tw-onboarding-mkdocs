@@ -14,7 +14,7 @@ description: A checklist of the channels, repositories, and other services each 
 
 - [ ] Join the Nextflow and nf-core Slack. Join the #documentation channels for both.
 - [ ] In the Seqera Slack, ask to be added to #tower-team, and add yourself to these channels:
-    - #documentation
-    - #engineering
-    - #product-tower
-    - #customer-experience
+    - documentation
+    - engineering
+    - product-tower
+    - customer-experience
