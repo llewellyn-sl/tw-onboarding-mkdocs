@@ -26,19 +26,16 @@ We use MkDocs Material [admonitions](https://squidfunk.github.io/mkdocs-material
 !!! tip ""
     This is a tip. 
 
-![Headerless admonitions](../../../../assets/Admonitions.png)
-
 ## Example blocks
 
 We use [collapsible admonition blocks](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#collapsible-blocks) for examples:
 
-`???+ example "Title"` renders a block that is expanded by default.
+???+ example "Title" 
+    An example block that is expanded by default.
 
-![Expanded example block](../../../../assets/Example%20expanded.png)
 
-`??? example "Title"` renders a block that is collapsed by default. 
-
-![Collapsed example block](../../../../assets/Example%20collapsed.png)
+??? example "Title" 
+    An example block that is collapsed by default. 
 
 ## Content tabs
 
@@ -55,12 +52,6 @@ We use [content tabs](https://squidfunk.github.io/mkdocs-material/reference/cont
 === "Tab 3"
 
     Tab 3 content. 
-
-![Content tabs](../../../../assets/Tabbed%201.png)    
-
-![Content tabs](../../../../assets/Tabbed%202.png) 
-
-![Content tabs](../../../../assets/Tabbed%203.png) 
 
 ## MkDocs tables
 

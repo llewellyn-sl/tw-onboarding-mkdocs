@@ -1,9 +1,9 @@
-site_name: Nextflow Tower documentation
-site_author: Seqera Labs
-site_url: https://help.tower.nf
+site_name: TW onboarding docs
+site_author: Seqera
+site_url: 0.0.0.0:8000
 repo_name: nf-tower-docs
-repo_url: https://github.com/seqeralabs/nf-tower-docs
-edit_uri: https://github.com/seqeralabs/nf-tower-docs/tree/master/docs
+repo_url: https://github.com/llewellyn-sl/tw-onboarding-mkdocs
+edit_uri: https://github.com/llewellyn-sl/tw-onboarding-mkdocs/tree/master/docs
 docs_dir: .
 
 site_dir: public
@@ -13,8 +13,7 @@ plugins:
   - search
   - same-dir
   - table-reader
-  - markdownextradata:
-      data: /_data 
+  - markdownextradata
 
 theme:
   language: en
@@ -24,7 +23,6 @@ theme:
     scheme: default
     primary: white
   favicon: _favicons/favicon.ico
-  logo: _logos/nf-tower-icon-black.svg
   features:
   - navigation.instant
   - navigation.tracking
@@ -41,20 +39,8 @@ extra_css:
 - stylesheets/extra.css   # 2022-04-01 Added by Graham to get more space above bullets.
 
 extra:
-  analytics:
-    provider: google
-    property: G-NR1CNM213G
   # generator: false
   homepage: /
-  social:
-  - icon: fontawesome/solid/paper-plane
-    link: mailto:support@seqera.io
-  - icon: fontawesome/brands/twitter
-    link: https://twitter.com/seqeralabs
-  - icon: fontawesome/brands/github
-    link: https://github.com/seqeralabs
-  version:
-    provider: mike
 
 extra_javascript:
   - javascripts/mathjax.js
@@ -75,9 +61,6 @@ markdown_extensions:
 - pymdownx.highlight:
     linenums: true
 - pymdownx.snippets
-- pymdownx.emoji:
-    emoji_index: !!python/name:materialx.emoji.twemoji
-    emoji_generator: !!python/name:materialx.emoji.to_svg
 
 
 nav:
