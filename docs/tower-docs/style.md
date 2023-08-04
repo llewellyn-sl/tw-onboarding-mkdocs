@@ -77,7 +77,7 @@ We use [mkdocs-table-reader-plugin](https://timvink.github.io/mkdocs-table-reade
     ```
     
 3. Each unique column name will be rendered in the table, so ensure that all row entries have the same column name keys. The example above shows the structure for two row entries in a table with three columns.
-4. Reference this table in other markdown files with `{{ read_yaml('./tables/my_table.yml')}}` (relevant path to the table from the markdown file where it is being referenced).
+4. Reference this table in other markdown files with `{{ read_yaml('./tables/my_table.yml') }}` (relevant path to the table from the markdown file where it is being referenced).
 
 ## MkDocs variables for content re-use
 
