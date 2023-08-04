@@ -521,10 +521,12 @@
 </div>
 </div>
 <h2 id="mkdocs-tables">MkDocs tables<a class="headerlink" href="#mkdocs-tables" title="Permanent link">#</a></h2>
-<p>We use <a href="https://timvink.github.io/mkdocs-table-reader-plugin/">mkdocs-table-reader-plugin</a> to render tables:
-    1. Create an external yaml file in a <code>tables</code> folder within the content subfolder (e.g., <code>docs/enterprise/configuration/tables/my_table.yml</code>)
-    2. Add key-value pairs in groups, where each key represents a column name, and each value represents an entry in a row, e.g.:
-        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<p>We use <a href="https://timvink.github.io/mkdocs-table-reader-plugin/">mkdocs-table-reader-plugin</a> to render tables:</p>
+<ol>
+<li>Create an external yaml file in a <code>tables</code> folder within the content subfolder (e.g., <code>docs/enterprise/configuration/tables/my_table.yml</code>).</li>
+<li>
+<p>Add key-value pairs in groups, where each key represents a column name, and each value represents an entry in a row, e.g.:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -550,20 +552,26 @@
 <span class="nt">Value</span><span class="p">:</span><span class="w"></span>
 <span class="p p-Indicator">-</span><span class="w"></span>
 </code></pre></div></td></tr></table></div>
-    3. Each unique column name will be rendered in the table, so ensure that all row entries have the same column name keys. The example above shows the structure for two row entries in a table with three columns.
-    4. Reference this table in other markdown files with <code>{{ read_yaml('./tables/my_table.yml')}}</code> (relevant path to the table from the markdown file where it is being referenced).</p>
+</li>
+<li>
+<p>Each unique column name will be rendered in the table, so ensure that all row entries have the same column name keys. The example above shows the structure for two row entries in a table with three columns.</p>
+</li>
+<li>Reference this table in other markdown files with <code>{{ read_yaml('./tables/my_table.yml') }}</code> (relevant path to the table from the markdown file where it is being referenced).</li>
+</ol>
 <h2 id="mkdocs-variables-for-content-re-use">MkDocs variables for content re-use<a class="headerlink" href="#mkdocs-variables-for-content-re-use" title="Permanent link">#</a></h2>
-<p>We use <a href="https://github.com/rosscdh/mkdocs-markdownextradata-plugin">mkdocs-markdownextradata-plugin</a> to implement DRY-like variables for values that need to be updated in multiple locations on the site (e.g., the Tower container image URLs):
-    1. Create an external yaml file in <code>/docs/_data/</code> (e.g., <code>images.yml</code>)
-    2. Add key-value pairs to the external file (e.g. <code>tower_fe_image: "cr.seqera.io/private/nf-tower-enterprise/frontend:v23.1.3"</code>).
-    3. Update the <code>plugins</code> entry with a path to the file:
-        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<p>We use <a href="https://github.com/rosscdh/mkdocs-markdownextradata-plugin">mkdocs-markdownextradata-plugin</a> to implement DRY-like variables for values that need to be updated in multiple locations on the site (e.g., the Tower container image URLs):</p>
+<ol>
+<li>Create an external yaml file in <code>/docs/_data/</code> (e.g., <code>images.yml</code>)</li>
+<li>Add key-value pairs to the external file (e.g. <code>tower_fe_image: "cr.seqera.io/private/nf-tower-enterprise/frontend:v23.1.3"</code>).</li>
+<li>Update the <code>plugins</code> entry with a path to the file:
+    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">plugins</span><span class="p">:</span><span class="w"></span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">markdownextradata</span><span class="p">:</span><span class="w"></span>
 <span class="w">        </span><span class="nt">data</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">_data/images.yml</span><span class="w"></span>
-</code></pre></div></td></tr></table></div>
-    4. Reference this variable in other markdown files with <code>{{ images.tower_fe_image }}</code>.</p>
+</code></pre></div></td></tr></table></div></li>
+<li>Reference this variable in other markdown files with <code>{{ images.tower_fe_image }}</code>.</li>
+</ol>
                 
                   
                 

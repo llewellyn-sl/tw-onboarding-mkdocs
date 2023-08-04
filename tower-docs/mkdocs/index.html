@@ -104,7 +104,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mkdocs-plugins" class="md-skip">
+        <a href="#github-repositories" class="md-skip">
           Skip to content
         </a>
       
@@ -285,9 +285,57 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#github-repositories" class="md-nav__link">
+    GitHub repositories
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automation" class="md-nav__link">
+    Automation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extensions" class="md-nav__link">
+    Extensions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#mkdocs-plugins" class="md-nav__link">
     MkDocs plugins
   </a>
+  
+    <nav class="md-nav" aria-label="MkDocs plugins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs-table-reader-plugin" class="md-nav__link">
+    mkdocs-table-reader-plugin:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs-markdownextradata-plugin" class="md-nav__link">
+    mkdocs-markdownextradata-plugin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs-same-dir" class="md-nav__link">
+    mkdocs-same-dir
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -383,9 +431,57 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#github-repositories" class="md-nav__link">
+    GitHub repositories
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automation" class="md-nav__link">
+    Automation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extensions" class="md-nav__link">
+    Extensions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#mkdocs-plugins" class="md-nav__link">
     MkDocs plugins
   </a>
+  
+    <nav class="md-nav" aria-label="MkDocs plugins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs-table-reader-plugin" class="md-nav__link">
+    mkdocs-table-reader-plugin:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs-markdownextradata-plugin" class="md-nav__link">
+    mkdocs-markdownextradata-plugin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs-same-dir" class="md-nav__link">
+    mkdocs-same-dir
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -410,37 +506,30 @@
                   <h1>Tower docs MkDocs project</h1>
                 
                 <p>The <a href="https://help.tower.nf">Tower docs</a> site is built on a <a href="https://squidfunk.github.io/mkdocs-material/">MkDocs Material</a> project in the <a href="https://github.com/seqeralabs/nf-tower-docs">nf-tower-docs</a> GitHub repository. nf-tower-docs is a public repository that houses the publishing mechanism and plugins to build the site, and allows external documentation users to submit documentation issues and enhancement requests. </p>
+<h2 id="github-repositories">GitHub repositories<a class="headerlink" href="#github-repositories" title="Permanent link">#</a></h2>
 <p>The source of truth for the Markdown files that form the documentation is the <a href="https://github.com/seqeralabs/nf-tower-cloud/tree/master/docs">docs folder</a> of the nf-tower-cloud repo. This is a private repo that contains the source code of the Tower application. While the Tower docs were originally entirely in the nf-tower-docs repo, we moved the <code>.md</code> content and <code>mkdocs.yml</code> configuration file to the nf-tower-cloud repo to maintain the documentation close to the source code of the application. This encourages engineers and other internal stakeholders to contribute to the documentation during the Tower feature building process. </p>
 <p>While we track <a href="https://github.com/seqeralabs/nf-tower-docs/issues">issues</a> on the nf-tower-docs repo to evaluate fixes and improvements needed on the docs site, all content contributions must be made on a feature branch in the docs folder on nf-tower-cloud. Pull requests raised for files in the docs folder are reviewed by a member of the <code>tower-docs-codeowners</code> team and the engineer or other SME most familiar with the feature being documented. </p>
+<h2 id="automation">Automation<a class="headerlink" href="#automation" title="Permanent link">#</a></h2>
 <p>When documentation PRs are reviewed and merged to the master branch on nf-tower-cloud, a <a href="https://github.com/seqeralabs/nf-tower-cloud/blob/master/.github/workflows/docs_deploy.yml">GitHub workflow</a> copies the docs folder to the master branch of the nf-tower-docs repo so that content updates can be published manually from there. </p>
 <p>Once the PR has been merged to master in nf-tower-cloud and the docs-deploy workflow has successfully copied the content across to nf-tower-docs, we can <a href="../publish/">publish</a> to the master site. </p>
+<h2 id="extensions">Extensions<a class="headerlink" href="#extensions" title="Permanent link">#</a></h2>
 <p>The Tower documentation project relies on <a href="https://squidfunk.github.io/mkdocs-material/setup/setting-up-versioning/">mike</a> for content versioning, <a href="https://git.seqera.io/">Material-insiders</a> for custom theme features and social cards, and a number of MkDocs plugins.</p>
-<ul>
-<li>
-<p>Material-insiders requires access to the <a href="https://git.seqera.io/">Seqera Gitea</a> repository. Once your account has been created, generate an access token to use in your local <a href="./">MkDocs</a> build:</p>
-</li>
-<li>
-<p>Select <strong>Settings</strong> from the user top-right drop-down menu.</p>
-</li>
+<p><strong>Material-insiders</strong> requires access to the <a href="https://git.seqera.io/">Seqera Gitea</a> repository. Once your account has been created, generate an access token to use in your local <a href="./">MkDocs</a> build:</p>
+<ol>
+<li>Select <strong>Settings</strong> from the user top-right drop-down menu.</li>
 <li>Select the <strong>Applications</strong> tab.</li>
 <li>Under <strong>Generate New Token</strong>, enter a token name and select <strong>Generate Token</strong>. </li>
-<li>
-<p>Store this token as a <code>GITEA_TOKEN</code> environment variable on your machine. </p>
-</li>
-<li>
-<p><a href="https://squidfunk.github.io/mkdocs-material/setup/setting-up-versioning/">mike</a> enables a version selector on the Tower docs site. The Tower version is specified and the version selector is configured each time the docs are published. See <a href="../publish/">Publish</a> for details. </p>
-</li>
-</ul>
+<li>Store this token as a <code>GITEA_TOKEN</code> environment variable on your machine. </li>
+</ol>
+<p><a href="https://squidfunk.github.io/mkdocs-material/setup/setting-up-versioning/"><strong>mike</strong></a> enables a version selector on the Tower docs site. The Tower version is specified and the version selector is configured each time the docs are published. See <a href="../publish/">Publish</a> for details. </p>
 <h2 id="mkdocs-plugins">MkDocs plugins<a class="headerlink" href="#mkdocs-plugins" title="Permanent link">#</a></h2>
-<ul>
-<li>
-<p><a href="https://timvink.github.io/mkdocs-table-reader-plugin/">mkdocs-table-reader-plugin</a></p>
-<ul>
-<li>Insert tables (CSV, YML, etc.) directly into markdown pages using a tag.</li>
-<li>How it's implemented:<ol>
+<h3 id="mkdocs-table-reader-plugin"><a href="https://timvink.github.io/mkdocs-table-reader-plugin/">mkdocs-table-reader-plugin</a>:<a class="headerlink" href="#mkdocs-table-reader-plugin" title="Permanent link">#</a></h3>
+<p>Insert tables (CSV, YML, etc.) directly into markdown pages using a tag. How it's implemented:</p>
+<ol>
 <li>Activate as a <code>plugins</code> entry in <code>mkdocs.yml</code> (below <code>social</code> and <code>search</code>, but above other mkdocs plugins)</li>
 <li>Create an external yaml file in a <code>tables</code> folder within the content subfolder (e.g., <code>docs/enterprise/configuration/tables/compute_env.yml</code>)</li>
-<li>Add key-value pairs in groups, where each key represents a column name, and each value represents an entry in a row, e.g.:
+<li>Add key-value pairs in groups, where each key represents a column name, and each value represents an entry in a row, e.g.:</li>
+</ol>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -466,18 +555,14 @@
 <span class="w">    </span><span class="no">Create this password manually if using an external database.</span><span class="w"></span>
 <span class="nt">Value</span><span class="p">:</span><span class="w"></span>
 <span class="p p-Indicator">-</span><span class="w"></span>
-</code></pre></div></td></tr></table></div></li>
+</code></pre></div></td></tr></table></div>
+<ol>
 <li>Each unique column name will be rendered in the table, so ensure that all row entries have the same column name keys. The example above shows the structure for two row entries in a table with three columns.</li>
 <li>Reference this table in other markdown files with <code>{{</code> <code>read_yaml('./tables/compute_env.yml')</code> <code>}}</code> (relative path to the table from the markdown file where it is being referenced).</li>
 </ol>
-</li>
-</ul>
-</li>
-<li>
-<p><a href="https://github.com/rosscdh/mkdocs-markdownextradata-plugin">mkdocs-markdownextradata-plugin</a></p>
-<ul>
-<li>Implement DRY-like variables for content which appears throughout the site. ( <em>Example: The latest Tower Enterprise container names.</em> )</li>
-<li>How it's implemented:<ol>
+<h3 id="mkdocs-markdownextradata-plugin"><a href="https://github.com/rosscdh/mkdocs-markdownextradata-plugin">mkdocs-markdownextradata-plugin</a><a class="headerlink" href="#mkdocs-markdownextradata-plugin" title="Permanent link">#</a></h3>
+<p>Implement DRY-like variables for content which appears throughout the site ( such as the latest Tower Enterprise container names). How it's implemented:</p>
+<ol>
 <li>Activate as a <code>plugins</code> entry in <code>mkdocs.yml</code></li>
 <li>Create an external yaml file in <code>/docs/_data/</code> ( e.g., <code>images.yml</code> )</li>
 <li>Add key-value pairs to the external file ( e.g., <code>tower_fe_image: "cr.seqera.io/private/nf-tower-enterprise/frontend:v23.1.3"</code> ).</li>
@@ -490,16 +575,8 @@
 </code></pre></div></td></tr></table></div></li>
 <li>Reference this variable in other markdown files with <code>{{ images.tower_fe_image }}</code>.</li>
 </ol>
-</li>
-</ul>
-</li>
-<li>
-<p><a href="https://github.com/oprypin/mkdocs-same-dir">mkdocs-same-dir</a></p>
-<ul>
-<li>Enable MkDocs to build with <code>mkdocs.yml</code> inside the <code>/docs</code> folder. List as a <code>plugins</code> entry in the <code>mkdocs.yml</code>, and add a <code>docs_dir: .</code> entry under the <code>edit_uri</code> entry.</li>
-</ul>
-</li>
-</ul>
+<h3 id="mkdocs-same-dir"><a href="https://github.com/oprypin/mkdocs-same-dir">mkdocs-same-dir</a><a class="headerlink" href="#mkdocs-same-dir" title="Permanent link">#</a></h3>
+<p>Enable MkDocs to build with <code>mkdocs.yml</code> inside the <code>/docs</code> folder. List as a <code>plugins</code> entry in the <code>mkdocs.yml</code>, and add a <code>docs_dir: .</code> entry under the <code>edit_uri</code> entry.</p>
                 
                   
                 
