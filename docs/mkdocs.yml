@@ -1,6 +1,6 @@
 site_name: TW onboarding docs
 site_author: Seqera
-site_url: 0.0.0.0:8000
+site_url: http://0.0.0.0:8000
 repo_name: nf-tower-docs
 repo_url: https://github.com/llewellyn-sl/tw-onboarding-mkdocs
 edit_uri: https://github.com/llewellyn-sl/tw-onboarding-mkdocs/tree/master/docs
