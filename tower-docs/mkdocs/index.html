@@ -528,8 +528,8 @@
 <ol>
 <li>Activate as a <code>plugins</code> entry in <code>mkdocs.yml</code> (below <code>social</code> and <code>search</code>, but above other mkdocs plugins)</li>
 <li>Create an external yaml file in a <code>tables</code> folder within the content subfolder (e.g., <code>docs/enterprise/configuration/tables/compute_env.yml</code>)</li>
-<li>Add key-value pairs in groups, where each key represents a column name, and each value represents an entry in a row, e.g.:</li>
-</ol>
+<li>
+<p>Add key-value pairs in groups, where each key represents a column name, and each value represents an entry in a row, e.g.,:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -556,8 +556,10 @@
 <span class="nt">Value</span><span class="p">:</span><span class="w"></span>
 <span class="p p-Indicator">-</span><span class="w"></span>
 </code></pre></div></td></tr></table></div>
-<ol>
-<li>Each unique column name will be rendered in the table, so ensure that all row entries have the same column name keys. The example above shows the structure for two row entries in a table with three columns.</li>
+</li>
+<li>
+<p>Each unique column name will be rendered in the table, so ensure that all row entries have the same column name keys. The example above shows the structure for two row entries in a table with three columns.</p>
+</li>
 <li>Reference this table in other markdown files with <code>{{</code> <code>read_yaml('./tables/compute_env.yml')</code> <code>}}</code> (relative path to the table from the markdown file where it is being referenced).</li>
 </ol>
 <h3 id="mkdocs-markdownextradata-plugin"><a href="https://github.com/rosscdh/mkdocs-markdownextradata-plugin">mkdocs-markdownextradata-plugin</a><a class="headerlink" href="#mkdocs-markdownextradata-plugin" title="Permanent link">#</a></h3>
